@@ -1,0 +1,41 @@
+package me.libayon.battlebonk.module.modules.movement;
+
+import me.libayon.battlebonk.module.*;
+import me.libayon.battlebonk.event.events.*;
+
+public class TestModule extends Module
+{
+    public TestModule() {
+        super("TestModule", "This is a test module...", 0, Category.MOVEMENT, new Mode[] { Mode.AAC });
+    }
+    
+    @Override
+    public void setup() {
+    }
+    
+    @Override
+    public void onEnable() {
+        this.mc.thePlayer.setPosition(this.mc.thePlayer.posX, this.mc.thePlayer.posY + 25.0, this.mc.thePlayer.posZ);
+    }
+    
+    @Override
+    public void onDisable() {
+    }
+    
+    @Override
+    public void onUpdate(final UpdateEvent event) {
+    }
+    
+    @Override
+    public void onMouseScroll(final MouseScrollEvent e) {
+    }
+    
+    @Override
+    public void onPacketReceived(final PacketReceivedEvent event)
+
+    {@Override
+    public void onMovement(final MovementPositionEvent even)
+
+
+    }
+}
